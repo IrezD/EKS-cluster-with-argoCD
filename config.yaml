@@ -7,8 +7,13 @@ spec:
   project: default
   source:
     repoURL: https://github.com/IrezD/EKS-cluster-with-argoCD.git
-    targetRevision: HEAD
+    targetRevision: main
     path: kubernetes
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: my-app
+
+  syncPolicy:
+    automated: 
+      prune: true 
+      selfHeal: true
