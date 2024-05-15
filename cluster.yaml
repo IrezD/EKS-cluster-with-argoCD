@@ -8,5 +8,5 @@ metadata:
 nodeGroups:
   - name: node-group
     instanceType: m5.large
-    desiredCapacity: 1
+    desiredCapacity: 3
     volumeSize: 80
