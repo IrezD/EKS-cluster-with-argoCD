@@ -19,7 +19,7 @@ spec:
         app: webapp
     spec:
       containers:
-      - image: irezden/numberapi:v2
+      - image: irezden/numberapi:v3
         name: numberapi
         ports:
         - containerPort: 5000
